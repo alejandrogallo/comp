@@ -23,7 +23,7 @@
     "name": "Ivan",
     "date": "2016-04-29",
     "comment": "Puntos regalados iniciales",
-    "points": 10
+    "points": 20
   },{
     "name": "Joan",
     "date": "2016-04-29",
@@ -33,6 +33,11 @@
     "name": "Mario",
     "date": "2016-04-29",
     "comment": "Se negó a ir a cenar con sus amigos",
+    "points": -5
+  },{
+    "name": "Carlos",
+    "date": "2016-04-29",
+    "comment": "Criticar y danar a sus amijjos",
     "points": -5
   }
 ]
