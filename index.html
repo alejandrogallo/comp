@@ -6,23 +6,35 @@
     <title>Comportamiento de los Amijjos</title>
 
     <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
   </head>
-  <body>
-    <h1>Comportamiento de los "Amijjos"</h1>
+  <body ng-app="comp" ng-controller="MainController">
 
     <div class="container">
+      <h1>Comportamiento de los "Amijjos"</h1>
       <ul class="list-group">
-        <li class="list-group-item">
-          <span class="badge">Mario</span>
-          No ha ido a cenar el dia 2016-04-29.
+        <li ng-repeat="friendName in FRIENDS_DATA.names" class="list-group-item">
+          <h3 class="banner">
+            {{ friendName }}
+          <button class="btn btn-success" ng-click="show_data=show_data?false:true"><i class="glyphicon glyphicon-cog"></i> Info</button>
+          </h3>
+          <ul ng-show="show_data" class="list-group">
+            <li  ng-repeat="data in FRIENDS_DATA[friendName]" class="list-group-item">
+              <span class="badge">{{data.points}}</span>
+              <span class="badge">{{data.date}}</span>
+              {{data.comment}}
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
 
+
+    <script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
   </body>
 </html>

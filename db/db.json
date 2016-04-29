@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alejandro",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados",
+    "points": 40
+  },{
+    "name": "Mario",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados iniciales",
+    "points": 40
+  },{
+    "name": "Oscar",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados iniciales",
+    "points": 40
+  },{
+    "name": "Carlos",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados iniciales",
+    "points": 40
+  },{
+    "name": "Ivan",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados iniciales",
+    "points": 10
+  },{
+    "name": "Joan",
+    "date": "2016-04-29",
+    "comment": "Puntos regalados iniciales",
+    "points": 40
+  },{
+    "name": "Mario",
+    "date": "2016-04-29",
+    "comment": "Se negó a ir a cenar con sus amigos",
+    "points": -5
+  }
+]

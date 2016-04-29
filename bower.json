@@ -4,5 +4,8 @@
   "main": "",
   "license": "MIT",
   "homepage": "",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
 }
