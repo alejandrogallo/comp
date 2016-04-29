@@ -43,9 +43,13 @@ angular.module('comp', [])
   }
 
 
-  $scope.rateFriend = function (friendName) {
-    $scope.fetchData(); //Fetch data por si las moscas 
-    console.log($scope.DATA);
+  $scope.getPoints = function (friendName) {
+    $scope.fetchData(); //Fetch data por si las moscas
+    var points = 0;
+    $scope.FRIENDS_DATA[friendName].forEach(function(element, index){
+      points+=element.points;
+    });
+    return points;
   }
 
   $scope.fetchData();

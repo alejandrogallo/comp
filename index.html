@@ -20,6 +20,9 @@
           <h3 class="banner">
             {{ friendName }}
           <button class="btn btn-success" ng-click="show_data=show_data?false:true"><i class="glyphicon glyphicon-cog"></i> Info</button>
+            <div class="badge">
+              {{getPoints(friendName)}}
+            </div>
           </h3>
           <ul ng-show="show_data" class="list-group">
             <li  ng-repeat="data in FRIENDS_DATA[friendName]" class="list-group-item">
