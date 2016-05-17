@@ -44,5 +44,10 @@
     "date": "2016-05-02",
     "comment": "Pasarle musica a su amigo.",
     "points": 55
+  },{
+    "name": "Oscar",
+    "date": "2016-05-17",
+    "comment": "No donar-nos informacio sobre xfit",
+    "points": -10
   }
 ]
